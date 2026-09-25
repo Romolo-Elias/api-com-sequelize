@@ -1,14 +1,11 @@
 
 
 const express = require("express");
+
+const routes = require('./routes/index.js')
+
 const app = express();
 
-app.use(express.json());
-
-app.get("/teste", (req, res) =>{
-    res
-        .status(200)
-        .send({mensagem: "Boas-vindas a api"})
-})
+routes(app);
 
 module.exports = app;
