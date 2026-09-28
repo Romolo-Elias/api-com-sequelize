@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
       })
 
       Matricula.belongsTo(models.Curso, {
-        foreignKey: 'cueso_id'
+        foreignKey: 'curso_id'
       })
     }
   }
